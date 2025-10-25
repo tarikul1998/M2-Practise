@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container {
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* gap: 20px; */
+            width: 1140px;
+            border: 2px solid skyblue;
+        }
+
+        .card {
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* .card img {
+            width: 250px;
+            height: auto;
+            object-fit: cover;
+        } */
+
+
+        /* .content h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        } */
+
+        /* .content p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 10px;
+        } */
+
+        /* button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        } */
+        /* 
+        button:hover {
+            background-color: #0056b3;
+        } */
+
+        /* Responsive */
+        /* @media (max-width: 700px) {
+            .card {
+                flex-direction: column;
+            }
+
+            .card img {
+                width: 100%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="card">
+            <img src="./images/food.webp" alt="Food">
+            <div class="content">
+                <h2>Post Title Will Be Here</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit ducimus est esse
+                    perspiciatis dolorem, nostrum quod id debitis doloremque.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/food.webp" alt="Salad">
+            <div class="content">
+                <h2>Post Title Will Be Here</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam, quo inventore
+                    repudiandae aperiam incidunt, temporibus quas impedit ipsum dignissimos.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

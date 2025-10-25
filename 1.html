@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desktop and Mobile</title>
+  <style>
+    .left {
+      background: #d9e7ff;
+      width: 20vh;
+      height: 40vh;
+    }
+
+    .right {
+      background: #fffad9;
+      width: 70vh;
+      height: 40vh;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Mobile view */
+    @media (max-width: 576px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left,
+      .right {
+        width: 90%; /* or 100% for full width */
+        height: 30vh; /* optional: smaller height for mobile */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box left">Left</div>
+    <div class="box right">Right</div>
+  </div>
+</body>
+
+</html>
