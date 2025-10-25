@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .card {
+            display: flex;
+            border-radius: 10px;
+            background-color: white;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .content h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width:576px) {
+            .card {
+                flex-direction: column;
+            }
+
+            .card img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./images/burger.png" alt="">
+            <div class="content">
+                <h2>Post Title Will Be Here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nam error labore ducimus rerum amet
+                    officia ipsam fugiat perspiciatis corrupti! Labore fugit illum deserunt quia totam, ex fuga corporis
+                    culpa.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/pizza.png" alt="">
+            <div class="content">
+                <h2>Post Title Will Be Here</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis cumque obcaecati dicta exercitationem
+                    explicabo facere impedit, deserunt at aut voluptatum voluptatem iure quas? Suscipit quasi
+                    laudantium, placeat ad accusamus commodi?</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
