@@ -2,53 +2,57 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desktop and Mobile</title>
-  <style>
-    .left {
-      background: #d9e7ff;
-      width: 20vh;
-      height: 40vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH-10</title>
+    <style>
+        .container {
+            display: flex;
+        }
 
-    .right {
-      background: #fffad9;
-      width: 70vh;
-      height: 40vh;
-    }
+        .left {
+            background-color: #d9e7ff;
+            width: 150px;
+            height: 300px;
 
-    .container {
-      display: flex;
-    }
+        }
 
-    .box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        .right {
+            background-color: #fffad9;
+            width: 500px;
+            height: 300px;
+        }
 
-    /* Mobile view */
-    @media (max-width: 576px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
+        .left,
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-      .left,
-      .right {
-        width: 90%; /* or 100% for full width */
-        height: 30vh; /* optional: smaller height for mobile */
-      }
-    }
-  </style>
+        /* For screen less than 576px (mobile view) */
+        @media screen and (max-width:576px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="box left">Left</div>
-    <div class="box right">Right</div>
-  </div>
+    <div class="container">
+        <div class="left">
+            Left
+        </div>
+        <div class="right">
+            Right
+        </div>
+    </div>
 </body>
 
 </html>
