@@ -12,30 +12,30 @@
             margin: 0 auto;
         }
 
-        .box {
+        .container {
             display: flex;
             gap: 20px;
             padding: 20px;
             align-items: center;
         }
 
-        .box div {
+        .container div {
             width: 50%;
         }
 
-        .box img {
+        .container img {
             width: 100%;
             border-radius: 8px;
             display: block;
         }
 
         @media screen and (max-width:576px) {
-            .box {
+            .container {
                 flex-direction: column;
                 text-align: center;
             }
 
-            .box div {
+            .container div {
                 width: 100%;
             }
         }
@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    <div class="box">
+    <div class="container">
         <div>
             <img src="./images/developers/developer.png" alt="Developer">
         </div>
@@ -57,7 +57,7 @@
         </div>
     </div>
 
-    <div class="box">
+    <div class="container">
         <div>
             <img src="./images/developers/developer.png" alt="Developer">
         </div>
