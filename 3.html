@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
 
+        .container {
+            display: flex;
+            row-gap: 10px;
+        }
+
+        .container img {
+            width: 100%;
+        }
+
+        .container div {
+            width: 50%;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        /* second container image right, text left */
+        .container:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .container div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="./images/sky.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Why do we do it</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quas ipsum ea voluptas illo
+                reprehenderit architecto. Molestiae eveniet corrupti quis id dolore libero molestias quo, harum nulla
+                praesentium, in nobis totam iure ab dolor aut, maiores quasi? Ea, autem maxime dolor perspiciatis, fugit
+                ipsa impedit numquam repellat a quia, nesciunt ad qui reprehenderit vel minima! Vel nemo, expedita hic,
+                minus velit eaque iure dolorum quaerat quibusdam pariatur sit, repudiandae porro veritatis fugiat
+                explicabo. Doloribus odit laboriosam aspernatur placeat quo voluptatibus delectus pariatur. Eius quae
+                voluptatibus nobis natus quibusdam, rerum repellendus ut dolore, hic nisi excepturi pariatur obcaecati.
+                Vero, placeat dicta?
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <img src="./images/strong.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Why do we do it</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iusto ipsum optio neque perferendis ducimus
+                sed deleniti, inventore amet, enim nulla quae veritatis illo. Incidunt dolores officia quibusdam id
+                beatae quam! Perspiciatis molestiae consectetur omnis incidunt excepturi nobis ducimus natus eum earum
+                dolores eveniet autem, exercitationem corrupti soluta totam officiis veniam eos cupiditate. Perspiciatis
+                officia, possimus dolores distinctio odio tenetur nihil? Aut quia dolores architecto totam repellat
+                sapiente praesentium consectetur modi, inventore ullam, laboriosam, quas quo possimus corporis debitis
+                repellendus eos libero! Tempora optio quas deserunt, repellendus ducimus aperiam facilis est
+                exercitationem quo suscipit labore cupiditate corporis, eligendi non dolorum!
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
