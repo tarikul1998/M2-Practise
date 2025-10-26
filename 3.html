@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            border: 2px solid tomato;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .box {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .box div {
+            width: 50%;
+        }
+
+        .box img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+
+        @media screen and (max-width:576px) {
+            .box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .box div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <img src="./images/developers/developer.png" alt="Developer">
+        </div>
+        <div>
+            <h3>Why do we use it?</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, numquam beatae nihil aspernatur voluptatum odio,
+                qui a tempore accusamus est iusto incidunt saepe illum facere alias commodi sapiente consequatur, fuga suscipit
+                voluptatem voluptas possimus esse impedit vero.
+            </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div>
+            <img src="./images/developers/developer.png" alt="Developer">
+        </div>
+        <div>
+            <h3>Why do we use it?</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, numquam beatae nihil aspernatur voluptatum odio,
+                qui a tempore accusamus est iusto incidunt saepe illum facere alias commodi sapiente consequatur, fuga suscipit
+                voluptatem voluptas possimus esse impedit vero.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
